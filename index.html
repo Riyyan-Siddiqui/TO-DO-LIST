@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-DO List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="pop-container" id="pop-container">
+      <div class="task">
+        <form id="taskform">
+          <input name="task" type="text"  id="enterTask" placeholder="Enter Task" required/>
+          <button class="cross" id="cross">
+            <i class="fa-regular fa-circle-xmark"></i>
+          </button>
+          <button type = "submit" id="tick" class="tick" >
+            <i class="fa-regular fa-circle-check"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="container" id="container">
+      <div class="row row-1">
+        <div>
+          <i class="fa-solid fa-bars"></i>
+          <h1>Website To-Do List</h1>
+        </div>
+      </div>
+      <div class="row row-2">
+        <div class="task-container" id="task-container">
+          <!-- <div>
+            <input type="radio" />
+            <p>playing cricket</p>
+            <i class="fa-regular fa-trash-can"></i>
+          </div>
+          <div>
+            <input type="radio" />
+            <p>playing football</p>
+            <i class="fa-regular fa-trash-can"></i>
+          </div>
+          <div>
+            <input type="radio" />
+            <p>praying namaz</p>
+            <i class="fa-regular fa-trash-can"></i>
+          </div>
+        </div> -->
+        <button>+ New Task</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

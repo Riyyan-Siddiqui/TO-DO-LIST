@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(to-dobackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container {
+  margin: 0 auto;
+  height: fit-content;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: space-between; */
+  justify-content: space-between;
+}
+.row-1 {
+  width: 100%;
+  height: 2.5em;
+  background-color: purple;
+}
+.row {
+  border-radius: 20px;
+  margin-bottom: 2em;
+}
+.row-1 div {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12%;
+  margin-left: 1em;
+  color: white;
+}
+
+.row-1 h1 {
+  font-size: 1.4em;
+}
+
+.row-2 {
+  height: 80%;
+  padding: 1em 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-container {
+  height: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: red;  */
+  gap: 10px;
+}
+.task-container div p {
+  width: 100%;
+  margin-left: 5px;
+  height: 2em;
+  display: flex;
+  align-items: center;
+}
+
+.task-container div {
+  display: flex;
+  width: 100%;
+  height: 15%;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+  padding: 0 0.3em;
+  border-radius: 10px;
+  /* gap: 4rem;  */
+}
+
+.row-2 button {
+  position: relative;
+  top: 3em;
+  padding: 1.2em 2em;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 12px;
+}
+
+.task-container div .fa-trash-can,
+.fa-pen-to-square {
+  opacity: 60%;
+}
+
+.task-container div .fa-trash-can:hover,
+.fa-pen-to-square:hover {
+  opacity: 100%;
+}
+
+/* POP UP */
+
+.pop-container {
+  position: absolute;
+  top: 50%;
+  min-width: 300px;
+  width: 30%;
+  height: 50px;
+  background-color: blueviolet;
+  border-radius: 4px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  display: none;
+}
+
+.pop-container form {
+  display: flex;
+}
+.pop-container .task {
+  width: 90%;
+}
+
+.task input {
+  width: 100%;
+  background-color: white;
+  padding: 0.5em 0.5em;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  margin-right: 0.5em;
+}
+.pop-container i {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+.pop-container button {
+  background-color: transparent;
+  border: none;
+}
+
+.cross:hover {
+  color: red;
+}
+
+.tick:hover {
+  color: green;
+}
